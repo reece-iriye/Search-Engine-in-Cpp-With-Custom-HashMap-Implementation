@@ -11,7 +11,7 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 add_compile_options(-Wall -Wextra -pedantic)
 
 add_executable(rapidJSONExample rapidJSONExample.cpp DSAVLTree.h DocumentParser.cpp DocumentParser.h Document.cpp Document.h porter2_stemmer.cpp porter2_stemmer.h Database.cpp Database.h DatabaseHandler.cpp DatabaseHandler.h QueryProcessor.cpp QueryProcessor.h)
-add_executable(supersearch main.cpp DSAVLTree.h DocumentParser.cpp DocumentParser.h Document.cpp Document.h porter2_stemmer.cpp porter2_stemmer.h database.cpp database.h DatabaseHandler.cpp DatabaseHandler.h QueryProcessor.cpp QueryProcessor.h)
+add_executable(supersearch main.cpp DSAVLTree.h DocumentParser.cpp DocumentParser.h Document.cpp Document.h porter2_stemmer.cpp porter2_stemmer.h database.cpp database.h stopwords.csv QueryProcessor.cpp QueryProcessor.h)
 
 
 # this makes sure we also link rapidjson
